@@ -472,6 +472,7 @@ label {
   justify-content: center;
   align-items: center; }
   .footer-end p {
+    text-align: center;
     flex: 0 1 1300px;
     text-transform: uppercase;
     color: #fff;
@@ -1131,6 +1132,7 @@ label {
   justify-content: center;
   align-items: center; }
   .footer-end p {
+    text-align: center;
     flex: 0 1 1300px;
     text-transform: uppercase;
     color: #fff;
