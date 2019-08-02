@@ -17,7 +17,6 @@
     function View() {
 
         this.showModal = function(modal, images) {
-            var modal = modal;
 
             modal.classList.remove('closed');
 
@@ -27,7 +26,6 @@
         };
 
         this.hideModal = function(modal) {
-            var modal = modal;
             modal.classList.add('closed');
         };
     }
@@ -43,7 +41,6 @@
             var id = target.getAttribute('data-id');
             modal = document.getElementById(id);
             var images = target.getAttribute('data-img');
-            // console.log(images);
             model.openModal(modal, images);
         };
 
@@ -69,7 +66,6 @@
     var view = new View();
     var model = new Model(view);
     var controller = new Controller(model);
-
 
 
 }());

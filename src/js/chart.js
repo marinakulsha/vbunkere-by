@@ -6,7 +6,6 @@ myAppDB.ref('cars/').on("value", function(snapshot) {
     for (var car in val) {
         cars.push(val[car]);
     }
-    console.log(cars);
 
     createBarChart(cars);
 
@@ -100,7 +99,7 @@ myAppDB.ref('service/').on("value", function(snapshot) {
     for (var service in values) {
         popularService.push(values[service]);
     }
-    console.log(popularService);
+
 
     createDoughnutChart(popularService);
 

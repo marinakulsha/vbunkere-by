@@ -1,8 +1,8 @@
 (function() {
-    'use strict';
-    let slideIndex = 0;
+
+    var slideIndex = 0;
     showSlides(slideIndex);
-    let dotContainer = document.getElementById('dot-container');
+    var dotContainer = document.getElementById('dot-container');
     dotContainer.addEventListener('click', function(event) {
         event.preventDefault();
         if (event.target.dataset.key) {
@@ -10,13 +10,13 @@
         }
     });
 
-    let nextButton = document.getElementById('next-button');
+    var nextButton = document.getElementById('next-button');
     nextButton.addEventListener('click', function(event) {
         event.preventDefault();
         showSlides(slideIndex + 1);
     });
 
-    let previousButton = document.getElementById('previous-button');
+    var previousButton = document.getElementById('previous-button');
     previousButton.addEventListener('click', function(event) {
         event.preventDefault();
         showSlides(slideIndex - 1);
@@ -24,8 +24,8 @@
 
     function showSlides(n) {
         slideIndex = n;
-        let slides = document.getElementsByClassName("slideCollection");
-        let dots = document.getElementsByClassName("dot");
+        var slides = document.getElementsByClassName("slideCollection");
+        var dots = document.getElementsByClassName("dot");
 
         if (n >= slides.length) {
             slideIndex = 0;
@@ -43,4 +43,4 @@
         dots[slideIndex].classList.add("active");
     }
 
-}());
+}())

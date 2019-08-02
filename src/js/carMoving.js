@@ -8,20 +8,17 @@ myAppDB.ref('Progress/').on("value", function(snapshot) {
     var values = snapshot.val();
     for (var award in values) {
         awards.push(values[award]);
-    }
+    };
 
     function movingCar([first, ...rest]) {
         if (!first) {
             movingArea.classList.remove('animation');
             return;
-        }
+        };
         cloud.innerHTML = `<span class="textCloud">${first}</span>`;
-        setTimeout(function() { movingCar(rest) }, 3000);
-    }
+        setTimeout(function() { movingCar(rest); }, 3000);
+    };
 
-    function removeClass() {
-        movingArea.classList.remove('animation');
-    }
 
     carButton.addEventListener('click', function() {
         if (movingArea.classList.contains('animation')) {
@@ -29,11 +26,6 @@ myAppDB.ref('Progress/').on("value", function(snapshot) {
         } else {
             movingCar(awards);
             movingArea.classList.add('animation');
-        }
-
-
-
-
-
+        };
     });
 })

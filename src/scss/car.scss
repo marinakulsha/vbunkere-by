@@ -70,15 +70,11 @@
 }
 
 .animation {
-    -webkit-animation: car 23s infinite normal;
-    -webkit-animation-iteration-count: 1;
+    animation: car 23s infinite normal;
+    animation-iteration-count: 1;
 }
 
-.paused {
-    animation-play-state: paused;
-}
-
-@-webkit-keyframes car {
+@keyframes car {
     0% {
         top: 50px;
         left: -250px;

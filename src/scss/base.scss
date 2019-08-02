@@ -68,7 +68,7 @@ body {
     justify-content: center;
     p {
         text-align: justify;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.5em;
         margin: 0;
         padding: 0;
@@ -765,7 +765,7 @@ body {
     }
 }
 
-///width 901px and more///
+//width 901px and more
 @media screen and (min-width: 901px) {
     .section-aboutus {
         display: flex;
@@ -1213,8 +1213,13 @@ body {
     }
 }
 
-///width 1200 and more
+//width 1200px and more
 @media screen and(min-width: 1200px) {
+    .aboutus-description {
+        p {
+            font-size: 20px;
+        }
+    }
     .ourworks-container {
         height: 100%;
         width: 100%;
