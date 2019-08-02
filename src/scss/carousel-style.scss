@@ -123,6 +123,10 @@ body {
     animation-duration: 1.5s;
 }
 
+.slideCollection.fade {
+    display: none;
+}
+
 @keyframes fade {
     from {
         opacity: .4
